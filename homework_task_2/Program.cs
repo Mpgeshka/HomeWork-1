@@ -10,23 +10,9 @@ int max = A;
 if (max < B)
 {
     max = B;
-    
-    if (max < C)
-    {
-        max = C;
-        Console.WriteLine($"{C} максимальное число среди {A}, {B}, {C}.");
-    }
-    else 
-    {
-        Console.WriteLine($"{B} максимальное число среди {A}, {B}, {C}.");
-    }
-}
-else if (max < C)
+} 
+if (max < C)
 {
     max = C;
-    Console.WriteLine($"{C} максимальное число среди {A}, {B}, {C}.");
 }
-else 
-{
-    Console.WriteLine($"{A} максимальное число среди {A}, {B}, {C}.");
-}
+Console.WriteLine($"{max} максимальное число среди {A}, {B}, {C}.");
