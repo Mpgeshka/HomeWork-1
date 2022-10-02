@@ -6,10 +6,10 @@ Console.Write("Введите второе число: ");
 int B = Convert.ToInt32(Console.ReadLine());
 if (A < B)
 {
-    Console.WriteLine($"Число {A} меньше числа {B}. Число {B} больше числа {A}.");
+    Console.WriteLine($"Минимальное число = {A}, максимальное = {B}.");
     
 }
 else
 {
-    Console.WriteLine($"Число {A} больше числа {B}. Число {B} меньше числа {A}.");
+    Console.WriteLine($"Максимальное число = {A} минимальное = {B}.");
 }
