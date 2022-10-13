@@ -9,7 +9,7 @@ int Prompt(string message)
 }
 int Pow(int A, int B)
 {
-    int res = A;
+    int res = 1;
     for (int i = 1; i < B; i++)
     {
         res *= A;
