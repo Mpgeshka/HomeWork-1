@@ -12,15 +12,11 @@ int Prompt(string message)
 int SumNumbers(int number)
 {
     int sum = 0;
-    if (number > 9 && number < 1000000)
+    while (number > 0)
     {
-        int a = number % 10;
-        int b = number / 10 % 10;
-        int c = number / 100 % 10;
-        int d = number / 1000 % 10;
-        int e = number / 10000 % 10;
-        int f = number / 100000 % 10;
-        sum = sum + a + b + c + d + e + f;
+        int dig = number % 10;
+        sum = sum + dig;
+        number = number / 10;
     }
     return sum;
 }
