@@ -9,8 +9,19 @@ int Prompt(string message)
     string str = Console.ReadLine();
     return int.Parse(str);
 }
+
+int Absolute(int number)
+{
+    if(number < 0)
+    {
+        number = - number;
+    }
+    return number;
+}
+
 int SumNumbers(int number)
 {
+    number = Absolute(number);
     int sum = 0;
     while (number > 0)
     {
@@ -22,7 +33,7 @@ int SumNumbers(int number)
 }
 bool ValidateNumber(int number)
 {
-    if (number < 10)
+    if (number < 10 && number > -10)
     {
         int result2 = number;
         Console.WriteLine($"Число однозначное, сумма цифр числа равна самому числу {number}!");
