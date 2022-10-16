@@ -10,7 +10,7 @@ int[] Fill(int Length)
     int[] array = new int[Length];
     for (int i = 0; i <= array.Length - 1; i++)
     {
-        int r = new Random().Next(-100, 0);
+        int r = new Random().Next(-10, 2);
         array[i] = r;
         Console.Write($"{array[i]}\t");
     }
