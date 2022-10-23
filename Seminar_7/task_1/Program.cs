@@ -9,7 +9,7 @@ double[,] CreateArray(int lenRows, int lenColumns)
     {
         for (int j = 0; j < array.GetLength(1); j++)
         {
-            array[i, j] = rnd.NextDouble();
+            array[i, j] = rnd.NextDouble()*100;
         }
     }
     return array;
@@ -21,7 +21,7 @@ void PrintArray(double[,] array)
     {
         for (int j = 0; j < array.GetLength(1); j++)
         {
-            System.Console.Write($"{array[i, j]}\t");
+            System.Console.Write( String.Format("{0:F}",array[i, j]) +"    ");
         }
         System.Console.WriteLine();
     }
